@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Images with Titles and Descriptions</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background.png'); /* Replace with your image URL */
+            background-size: cover; /* Ensure the background image covers the page */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent tiling */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: #fff; /* Make text white to contrast with background */
+            padding: 20px; /* Add padding for better spacing */
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+
+        .item img {
+            width: 500px;
+            height: auto;
+            margin-bottom: 10px;
+            animation: float 3s ease-in-out infinite;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .title {
+            color: #ff578c; /* Title color */
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .description {
+            font-size: 40px;
+            font-style: italic;
+            color: black
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            margin: 20px 0;
+            color: #ff578c; /* Main title color set to #ff578c */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Make the title pop */
+            font-size: 36px; /* Increase the font size for emphasis */
+        }
+    </style>
+</head>
+<body>
+    <h1>CONTENT</h1> <!-- Main title now says "CONTENT" and has the same color -->
+    <!-- Item 1 -->
+    <div class="item">
+        <img src="booklandia.jpg" alt="Image 1">
+        <div class="title">BOOKLANDIA</div>
+        <div class="description">I dressed up as oyasumi punpun, matching with my friend Reina, who is dressed up as aiko in the same manga.</div>
+    </div>
+    <!-- Item 2 -->
+    <div class="item">
+        <img src="cleanclass.jpg" alt="Image 2">
+        <div class="title">CLEANEST CLASSROOM</div>
+        <div class="description">This class picture was shortly taken after we were announced as the cleanest classroom for november.</div>
+    </div>
+    <!-- Item 3 -->
+    <div class="item">
+        <img src="angel.jpg" alt="Image 3">
+        <div class="title"> HISTORICAL ICON</div>
+        <div class="description">This is a picture of our selected representative to dress up as Amelia Earhart.</div>
+    </div>
+    <!-- Item 4 -->
+    <div class="item">
+        <img src="bookland.jpg" alt="Image 4">
+        <div class="title">MR AND MS BOOKLANDIA</div>
+        <div class="description">Our representatives, Gab and Irca, dressed up as the sun and moon.</div>
+    </div>
+</body>
+</html>
